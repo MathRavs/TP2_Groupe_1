@@ -13,6 +13,10 @@
 		22DF0F0326061EEC00C3525F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DF0F0126061EEC00C3525F /* Main.storyboard */; };
 		22DF0F0526061EF200C3525F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22DF0F0426061EF200C3525F /* Assets.xcassets */; };
 		22DF0F0826061EF200C3525F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22DF0F0626061EF200C3525F /* LaunchScreen.storyboard */; };
+		22DF0F10260622A700C3525F /* CountriesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF0F0F260622A700C3525F /* CountriesTableViewController.swift */; };
+		22DF0F142606264C00C3525F /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF0F132606264C00C3525F /* Country.swift */; };
+		22DF0F172606267400C3525F /* Countries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DF0F162606267400C3525F /* Countries.swift */; };
+		22DF0F1E26062C2C00C3525F /* copyright.txt in Resources */ = {isa = PBXBuildFile; fileRef = 22DF0F1826062C2B00C3525F /* copyright.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		22DF0F0426061EF200C3525F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		22DF0F0726061EF200C3525F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		22DF0F0926061EF200C3525F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22DF0F0F260622A700C3525F /* CountriesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTableViewController.swift; sourceTree = "<group>"; };
+		22DF0F132606264C00C3525F /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		22DF0F162606267400C3525F /* Countries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Countries.swift; sourceTree = "<group>"; };
+		22DF0F1826062C2B00C3525F /* copyright.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = copyright.txt; path = "../../../../Documents/fikambanana/country-images-master/copyright.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,43 @@
 		22DF0EFA26061EEC00C3525F /* TP2_Groupe_1 */ = {
 			isa = PBXGroup;
 			children = (
+				22DF0F2426062EA800C3525F /* Utils */,
+				22DF0F152606265E00C3525F /* data */,
+				22DF0F122606260400C3525F /* models */,
 				22DF0EFB26061EEC00C3525F /* AppDelegate.swift */,
 				22DF0EFD26061EEC00C3525F /* SceneDelegate.swift */,
 				22DF0EFF26061EEC00C3525F /* ViewController.swift */,
 				22DF0F0126061EEC00C3525F /* Main.storyboard */,
+				22DF0F0F260622A700C3525F /* CountriesTableViewController.swift */,
 				22DF0F0426061EF200C3525F /* Assets.xcassets */,
+				22DF0F1826062C2B00C3525F /* copyright.txt */,
 				22DF0F0626061EF200C3525F /* LaunchScreen.storyboard */,
 				22DF0F0926061EF200C3525F /* Info.plist */,
 			);
 			path = TP2_Groupe_1;
+			sourceTree = "<group>";
+		};
+		22DF0F122606260400C3525F /* models */ = {
+			isa = PBXGroup;
+			children = (
+				22DF0F132606264C00C3525F /* Country.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		22DF0F152606265E00C3525F /* data */ = {
+			isa = PBXGroup;
+			children = (
+				22DF0F162606267400C3525F /* Countries.swift */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		22DF0F2426062EA800C3525F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DF0F1E26062C2C00C3525F /* copyright.txt in Resources */,
 				22DF0F0826061EF200C3525F /* LaunchScreen.storyboard in Resources */,
 				22DF0F0526061EF200C3525F /* Assets.xcassets in Resources */,
 				22DF0F0326061EEC00C3525F /* Main.storyboard in Resources */,
@@ -138,8 +175,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				22DF0F10260622A700C3525F /* CountriesTableViewController.swift in Sources */,
 				22DF0F0026061EEC00C3525F /* ViewController.swift in Sources */,
 				22DF0EFC26061EEC00C3525F /* AppDelegate.swift in Sources */,
+				22DF0F142606264C00C3525F /* Country.swift in Sources */,
+				22DF0F172606267400C3525F /* Countries.swift in Sources */,
 				22DF0EFE26061EEC00C3525F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
